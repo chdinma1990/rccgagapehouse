@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'event_listing/index'
+
   #get 'home/index'
 
   root 'home#index'
