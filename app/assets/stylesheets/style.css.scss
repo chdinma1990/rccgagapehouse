@@ -1891,7 +1891,7 @@ body.boxed .body{
 }
 .event-list-item-date .event-date{
 	border: 2px solid #f8f8f8;
-	background-image:url(../images/dashed.png);
+	background-image:url("../assets/images.jpg");
 	text-align:center;
 	height:100px;
 	width:95px;
@@ -1902,6 +1902,7 @@ body.boxed .body{
 	-ms-transition:all 0.3s ease 0.2s;
 	-o-transition:all 0.3s ease 0.2s;
 	transition:all 0.3s ease 0.1s;
+	
 }
 .smaller-cont .event-list-item-date .event-date{
 	width:70px;

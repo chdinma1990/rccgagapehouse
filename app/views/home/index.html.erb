@@ -1,82 +1,52 @@
-  <!-- Start Hero Slider -->
-    <div class="hero-slider heroflex flexslider clearfix" data-autoplay="yes" data-pagination="no" data-arrows="yes" data-style="fade" data-speed="7000" data-pause="yes">
-      	<ul class="slides">
-        <!--	<li class="parallax" style="background-image:url(http://placehold.it/1200x500&amp;text=IMAGE+PLACEHOLDER);">
-            	<div class="flex-caption" data-appear-animation="fadeInRight" data-appear-animation-delay="500">
-                	<strong>God is the word</strong>
-                	<p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
-               	</div>
-            </li>
-        	<li class="parallax" style="background-image:url(http://placehold.it/1200x500&amp;text=IMAGE+PLACEHOLDER);">
-            	<div class="flex-caption" data-appear-animation="fadeInRight" data-appear-animation-delay="500">
-                	<strong>Find your way back home</strong>
-                	<p>Lorem ipsum dolor sit met, conteturing elit. Phasellus pellentesque osure risus lacinia tristique Fusce sed massa</p>
-               	</div>
-            </li> -->
-             <li class="parallax main_four">
+  <div class="hero-slider heroflex flexslider clearfix" data-autoplay="yes" data-pagination="no" data-arrows="yes" data-style="fade" data-speed="7000" data-pause="yes">
+    <ul class="slides">
+      
+      <!-- <li class="parallax guest">
+
+           <div class="flex-caption white" data-appear-animation="fadeInRight" data-appear-animation-delay="500">
+                <strong></strong>
+            </div>
+        </li> -->
+        <li class="parallax main_four">
+          <%= image_tag "image2.jpg", width: "100%", alt: 'image2' %>
+        
             <div class="flex-caption white" data-appear-animation="fadeInRight" data-appear-animation-delay="500">
-                <strong>To Serve God</strong>
+               <strong>To know Christ</strong>
             </div>
         </li>
         <li class="parallax main_one">
+          <%= image_tag "agapehouse2.jpg", width: "100%", alt: 'agapehouse2' %>
             <div class="flex-caption white" data-appear-animation="fadeInRight" data-appear-animation-delay="500">
-                <strong>To make heaven</strong>
+
+                <strong>To grow in Christ</strong>
             </div>
         </li>
-        <li class="parallax main_two">
+        <li class="parallax main_three">
+          <%= image_tag "image3.jpg", width: "100%", alt: 'image3' %>
             <div class="flex-caption white" data-appear-animation="fadeInRight" data-appear-animation-delay="500">
                 <strong>To lead people to Christ</strong>
             </div>
         </li>
-        <li class="parallax main_three">
+        <li class="parallax main_five">
+         <%= image_tag "image4.jpg", width: "100%", height: "100%", alt: 'image4' %>
             <div class="flex-caption white" data-appear-animation="fadeInRight" data-appear-animation-delay="500">
+
                 <strong>To help people grow in Christ</strong>
             </div>
         </li>
     </ul>
-      	</ul>
-        <canvas id="canvas-animation"></canvas>
-    </div>
-    <!-- End Hero Slider -->
-    <!-- Lead Content -->
-    <!--<div class="lead-content clearfix">
-    	<div class="lead-content-wrapper">
-    		<div class="container">
-            	<div class="row">
-                    <div class="col-md-4 col-sm-4 featured-block">
-                        <h3>Our Community</h3>
-                        <figure>
-                        	<a href="about.html"><img src="http://placehold.it/800x500&amp;text=IMAGE+PLACEHOLDER" alt="Our Community"></a>
-                    	</figure>
-                   		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra.</p>
-                    </div>
-                    <div class="col-md-4 col-sm-4 featured-block">
-                        <h3>Church Mission</h3>
-                        <figure>
-                        	<a href="donate.html"><img src="http://placehold.it/800x500&amp;text=IMAGE+PLACEHOLDER" alt="Our Community"></a>
-                    	</figure>
-                   		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra.</p>
-                    </div>
-                    <div class="col-md-4 col-sm-4 featured-block">
-                        <h3>Join a Group</h3>
-                        <figure>
-                        	<a href="new-here.html"><img src="http://placehold.it/800x500&amp;text=IMAGE+PLACEHOLDER" alt="Our Community"></a>
-                    	</figure>
-                   		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra.</p>
-                    </div>
-                </div>
-        	</div>
-        </div>
-    </div> -->
-   <div class="upcoming-event-bar event-dynamic">
+    <canvas id="canvas-animation"></canvas>
+</div>
+<!-- End Hero Slider -->
+<div class="upcoming-event-bar event-dynamic">
     <div class="container">
         <div class="row">
-            <% unless date_of_next("Sunday").strftime("%d %b, %Y") == DateTime.parse("20 AUG, 2017").strftime("%d %b, %Y") %>
+            <% unless date_of_next("Sunday").strftime("%d %b, %Y") == DateTime.parse("26 MAR, 2017").strftime("%d %b, %Y") %>
             <div class="col-md-6 col-sm-6">
-                <span class="label label-primary">Next Event</span>
+                <span class="label label-primary">Upcoming Event</span>
                 <h3><a href="#" class="event-title">Sunday Celebration Service</a></h3>
                 <h4 style="margin:0px;">
-                <span class="meta-data">On <span class="event-date"><%= date_of_next("Sunday").strftime("%d %b, %Y") %></span> at <span class="event-time">11:00 AM</span> at</span><span class="meta-data event-location"> <span class="event-location-address">6400 Mission Rd, Prairie Village, KS 66204</span></span>
+                <span class="meta-data">On <span class="event-date"><%= date_of_next("Sunday").strftime("%d %b, %Y") %></span> at <span class="event-time">11:00 AM</span> at</span><span class="meta-data event-location"> <span class="event-location-address">6400 Mission Rd Shawnee  KS 66204</span></span>
                 </h4>
             </div>
             <div class="col-md-4 col-sm-4">
@@ -90,11 +60,11 @@
             <% else %>
             <div class="col-md-6 col-sm-6">
                 <span class="label label-primary">Upcoming Event</span>
-                <h3><a href="#" class="event-title">Bible Study</a></h3>
+                <h3><a href="#" class="event-title">Guest Minister: Dr. Francis Myles</a></h3>
                 <h4 style="margin:0px;">
-                <span class="meta-data">On <span class="event-date">WED 23 AUG, 2017</span> at
+                <span class="meta-data">On <span class="event-date">FRI 24 MAR, 2017 - SUN 26 MAR, 2017</span> at
                 <span class="meta-data event-location">
-                    <span class="event-location-address">Teleconference</span>
+                    <span class="event-location-address">10813 East 23rd Street Independence MO 64052</span>
                 </span>
                 </h4>
             </div>
@@ -134,7 +104,7 @@
                                 <% @videos.each do |video| %>
                                     <li class="most-recent-sermon clearfix">
                                         <div class="latest-sermon-video fw-video">
-                                            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F100017105711758%2Fvideos%2F106968369883353%2F&show_text=0&width=269" width="269" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                                            <iframe width="560" height="315" src="<%= "https://www.youtube.com/embed/#{video.id}" %>" frameborder="0" allowfullscreen></iframe>
                                         </div>
                                         <div class="latest-sermon-content">
                                             <div class="meta-data"><h4><a href="#"><%= video.title %></a></h4></div>
@@ -143,7 +113,7 @@
                                     </li>
                                 <% end %>
                             <% end %>
-                           <!-- <li><a class= "basic-link" href="https://www.youtube.com/user/ShekinahGloryFire/videos" target="_blank">Watch More Sermons</a></li> -->
+                            <li><a class= "basic-link" href="https://www.youtube.com/user/ShekinahGloryFire/videos" target="_blank">Watch More Sermons</a></li>
                         </ul>
                     </div>
                 </div>
@@ -179,9 +149,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-4 featured-block">
-                    <h3>Mission and Visions</h3>
+                   <!-- <h3>Our Outreach</h3>
+                    <figure>
+                      
+                    </figure>
+                    <p>We are changing lives through the love of Jesus Christ locally and internationally.</p> -->
+                     <h3>Mission and Visions</h3>
                    <!-- <figure>
-                        <a href="#"><%= image_tag "volunteer.jpg", alt: "Outreach" %></a>
+                       
                     </figure> -->
                     <p>To make heaven.</p> <br>
                     <p>To take as many people with us.</p><br>
@@ -193,14 +168,14 @@
                 <div class="col-md-4 col-sm-4 featured-block">
                     <h3>Mission Statement</h3>
                     <figure>
-                        <a href="#"><%= image_tag "mission.jpg", alt: "Our Mission" %></a>
+                        <a href="#"><%= image_tag "", alt: "Our Mission" %></a>
                     </figure>
                     <p class="centerize">We are an apostolic center for those who want more of God's presence and power.</p>
                 </div>
                 <div class="col-md-4 col-sm-4 featured-block">
                     <h3>You are invited!</h3>
                     <figure>
-                        <a href="#"><%= image_tag "join.jpg", alt: "Our Mission" %></a>
+                        <a href="#"><%= image_tag "", alt: "Our Mission" %></a>
                     </figure>
                     <p>We welcome you to fellowship with us.</p>
                 </div>
