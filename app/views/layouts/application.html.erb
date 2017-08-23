@@ -5,12 +5,14 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 <%= render 'shared/head' %>
+
 <body class="home home-style2 header-style2">
 <!--[if lt IE 7]>
   <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
 <![endif]-->
 <div class="body">
   <%= render 'shared/header' %>
+  <%= render 'shared/about' %>
  
   <% if @home_page.present? %>
     <div class="main" role="main">

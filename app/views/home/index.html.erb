@@ -8,10 +8,11 @@
             </div>
         </li> -->
         <li class="parallax main_four">
-          <%= image_tag "image2.jpg", width: "100%", alt: 'image2' %>
-        
+         
+         <%= image_tag "image2.jpg", width: "100%", alt: 'image2' %>
             <div class="flex-caption white" data-appear-animation="fadeInRight" data-appear-animation-delay="500">
-               <strong>To know Christ</strong>
+               <h2>To know Christ
+               <small>The  Family Life Center in Grand Prairie, Texas</small></h2>
             </div>
         </li>
         <li class="parallax main_one">
@@ -46,7 +47,7 @@
                 <span class="label label-primary">Upcoming Event</span>
                 <h3><a href="#" class="event-title">Sunday Celebration Service</a></h3>
                 <h4 style="margin:0px;">
-                <span class="meta-data">On <span class="event-date"><%= date_of_next("Sunday").strftime("%d %b, %Y") %></span> at <span class="event-time">11:00 AM</span> at</span><span class="meta-data event-location"> <span class="event-location-address">6400 Mission Rd Shawnee  KS 66204</span></span>
+                <span class="meta-data">On <span class="event-date"><%= date_of_next("Sunday").strftime("%d %b, %Y") %></span> at <span class="event-time">11:00 AM</span> at</span><span class="meta-data event-location"> <span class="event-location-address">6400 Mission Rd Prairie Village, KS 66204</span></span>
                 </h4>
             </div>
             <div class="col-md-4 col-sm-4">
@@ -89,6 +90,15 @@
     </div>
 </div>
 <!-- Start Body Content -->
+  <div class="main" role="main">
+      <div id="content" class="content full">
+          <div class="container">
+                <h2>Welcome to Agape House</h2>
+                <hr class="sm">
+                <h4>Aenean vulputate eleifend tellus</h4>
+                <p>Nulla consequat massa quis enim.Donec pede justo,<br> fringilla vel, aliquet nec, vulputate eget, arcu. <br>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.<br> Nullam dictum felis eu pede mollis pretium. <br>
+                Integer tincidunt. Cras dapibus.<br> Vivamus elementum semper nisi.Aenean vulputate eleifend tellus. <br>
+                Nulla consequat massa quis enim.<br>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.<br> In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. <br>Nullam dictum felis eu pede mollis pretium. <br>Integer tincidunt. <br>Cras dapibus. Vivamus elementum semper nisi.Aenean vulputate eleifend tellus.</p>
 <div class="main" role="main">
     <div id="content" class="content full">
         <div class="container">
@@ -100,23 +110,14 @@
                                 <h3>Recent Sermons</h3>
                                 <hr class="sm">
                             </li>
-                            <% if @videos.present? %>
-                                <% @videos.each do |video| %>
-                                    <li class="most-recent-sermon clearfix">
-                                        <div class="latest-sermon-video fw-video">
-                                            <iframe width="560" height="315" src="<%= "https://www.youtube.com/embed/#{video.id}" %>" frameborder="0" allowfullscreen></iframe>
-                                        </div>
-                                        <div class="latest-sermon-content">
-                                            <div class="meta-data"><h4><a href="#"><%= video.title %></a></h4></div>
-                                            <p><%= video.description %></p>
-                                        </div>
-                                    </li>
-                                <% end %>
-                            <% end %>
-                            <li><a class= "basic-link" href="https://www.youtube.com/user/ShekinahGloryFire/videos" target="_blank">Watch More Sermons</a></li>
+                           <div class="latest-sermon-video fw-video">
+                            <iframe width="560" height="315" src=" <%= "https://www.youtube.com/embed/PhGhjMHhRkE" %>"frameborder="0" allowfullscreen></iframe>
+                           </div>
+                           
                         </ul>
                     </div>
-                </div>
+                </div> 
+       
                 <div class="col-md-7 col-sm-7">
                     <div class="element-block events-listing">
                         <div class="events-listing-header">
@@ -144,42 +145,32 @@
 </div>
 <!-- End Body Content -->
 <!-- Lead Content -->
-<div class="lead-content clearfix">
-    <div class="lead-content-wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-4 featured-block">
-                   <!-- <h3>Our Outreach</h3>
-                    <figure>
-                      
-                    </figure>
-                    <p>We are changing lives through the love of Jesus Christ locally and internationally.</p> -->
-                     <h3>Mission and Visions</h3>
-                   <!-- <figure>
-                       
-                    </figure> -->
-                    <p>To make heaven.</p> <br>
-                    <p>To take as many people with us.</p><br>
-                    <p>To have a member of RCCG in every family of all nations.</p><br>
-                    <p>To accomplish No. 1 above, holiness will be our lifestyle.</p><br>
-                    <p>To accomplish No. 2 and 3 above, we will plant churches within five minutes walking distance in every city and town <br>of developing countries and within five minutes driving distance in every city and town of developed countries.</p>
-                    <p>We will pursue these objectives until every Nation in the world is reached for the Lord Jesus Christ.</p>
-                </div>
-                <div class="col-md-4 col-sm-4 featured-block">
-                    <h3>Mission Statement</h3>
-                    <figure>
-                        <a href="#"><%= image_tag "", alt: "Our Mission" %></a>
-                    </figure>
-                    <p class="centerize">We are an apostolic center for those who want more of God's presence and power.</p>
-                </div>
-                <div class="col-md-4 col-sm-4 featured-block">
-                    <h3>You are invited!</h3>
-                    <figure>
-                        <a href="#"><%= image_tag "", alt: "Our Mission" %></a>
-                    </figure>
-                    <p>We welcome you to fellowship with us.</p>
+    <div class="lead-content clearfix">
+        <div class="lead-content-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 featured-block">
+                        <h3>Our Community</h3>
+                        <figure>
+                            <a href="about.html"><img src="http://placehold.it/800x500&amp;text=IMAGE+PLACEHOLDER" alt="Our Community"></a>
+                        </figure>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-4 featured-block">
+                        <h3>Church Mission</h3>
+                        <figure>
+                            <a href="donate.html"><img src="http://placehold.it/800x500&amp;text=IMAGE+PLACEHOLDER" alt="Our Community"></a>
+                        </figure>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-4 featured-block">
+                        <h3>Join a Group</h3>
+                        <figure>
+                            <a href="new-here.html"><img src="http://placehold.it/800x500&amp;text=IMAGE+PLACEHOLDER" alt="Our Community"></a>
+                        </figure>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
