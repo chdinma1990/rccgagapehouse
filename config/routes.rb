@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'contact' => 'contact#contact'
   get 'media'  => 'media#Services'
   get 'index' => 'home#index'
+  get 'ministries' => 'staff'
 
 
  

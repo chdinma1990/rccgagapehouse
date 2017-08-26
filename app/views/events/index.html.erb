@@ -1,0 +1,63 @@
+ <!-- Start Page Header -->
+    <div class="page-header parallax clearfix" style="background-image:url('../images/about1.jpg');">
+        <div class="title-subtitle-holder">
+          <div class="title-subtitle-holder-inner">
+          <h2>Events</h2>
+          </div>
+        </div>
+    </div>
+    <!-- End Page Header -->
+    <!-- Breadcrumbs -->
+    <div class="lgray-bg breadcrumb-cont">
+      <div class="container">
+            <ol class="breadcrumb">
+              <li><a href="/">Home</a></li>
+              <li class="active">Events</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="main" role="main">
+      <div id="content" class="content full">
+        <div class="container">
+          <%= flash_messages %>
+            <div class="col-md-12 col-sm-12">
+                <div class="element-block events-listing">
+                    <ul class="events-listing-content sort-destination isotope-events" data-sort-id="events">
+                      <% if @events.present? %>
+                        <% @events.each do |event| %>
+                          <li class="event-list-item event-dynamic grid-item prayers celebrations">
+                            <div class="event-list-item-date">
+                                <span class="event-date">
+                                    <span class="event-day"><%= event.date.strftime("%d") %></span>
+                                    <span class="event-month"><%= event.date.strftime("%b, %Y") %></span>
+                                  </span>
+                              </div>
+                              <div class="event-list-item-info">
+                                <div class="lined-info">
+                                    <h4><a href="single-event.html" class="event-title"><%= event.name %></a></h4>
+                                  </div>
+                                <div class="lined-info">
+                                    <span class="meta-data"><i class="fa fa-clock-o"></i><%= event.date.strftime("%A") %>, <span class="event-time"><%= event.start_time.strftime("%l:%M %p") %></span></span>
+                                  </div>
+                                <div class="lined-info event-location">
+                                    <span class="meta-data"><i class="fa fa-map-marker"></i> <span class="event-location-address"><%= event.address %></span></span>
+                                  </div>
+                              </div>
+                              <div class="event-list-item-actions">
+                                <ul class="action-buttons">
+                                    <li title="Share event"><a href="#" data-trigger="focus" data-placement="top" data-content="" data-toggle="popover" data-original-title="Share Event" class="event-share-link"><i class="icon-share"></i></a></li>
+                                    <li title="Get directions" class="hidden-xs"><a href="#" class="cover-overlay-trigger event-direction-link"><i class="icon-compass"></i></a></li>
+                                    <li title="Contact event manager"><a href="#" data-toggle="modal" data-target="#Econtact" class="event-contact-link"><i class="icon-mail"></i></a></li>
+                                  </ul>
+                              </div>
+                            </li>
+                          <% end %>
+                        <% end %>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

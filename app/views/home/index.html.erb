@@ -2,13 +2,13 @@
     <!-- Start Hero Slider -->
     <div class="hero-slider heroflex flexslider clearfix" data-autoplay="yes" data-pagination="no" data-arrows="yes" data-style="fade" data-speed="7000" data-pause="yes">
         <ul class="slides">
-        <li class="parallax main_four">
+        <li class="parallax main_four" style="padding-top: 0.5px; height: 900px;">
      
-     <%= image_tag "image2.jpg", width: "100%", height: "600", alt: 'image2' %>
-        <div class="flex-caption white" data-appear-animation="fadeInRight" data-appear-animation-delay="500">
+     <%= image_tag "image2.jpg", width: "100%", alt: 'image2' %>
+      <!--  <div class="flex-caption white" data-appear-animation="fadeInRight" data-appear-animation-delay="500" 
            <h2>To know Christ
            <small>The  Family Life Center in Grand Prairie, Texas</small></h2>
-        </div>
+        </div> -->
     </li>
     <li class="parallax main_one">
       <%= image_tag "agapehouse2.jpg", width: "100%", alt: 'agapehouse2' %>
@@ -312,13 +312,16 @@
     <!-- Gallery updates -->
     <div class="gallery-updates cols5 clearfix">
       <ul>
+        <li class="format-image"><a href="http://placehold.it/600x600&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto" class="media-box">
+          <%= image_tag 'gallery1.jpg' %></a></li>
+         
           <li class="format-image"><a href="http://placehold.it/600x600&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto" class="media-box">
-          <%= image_tag 'image5.jpg' %></a></li>
+          <%= image_tag 'gallery1.jpg' %></a></li>
           <li class="format-standard">
               <div class="flexslider galleryflex" data-autoplay="yes" data-pagination="yes" data-arrows="no" data-style="slide" data-pause="yes">
                     <ul class="slides">
                         <li class="item"><a href="http://placehold.it/600x600&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto[postname1]"><%= image_tag 'gallery1.jpg' %></a></li>
-                        <!--<li class="item"><a href="http://placehold.it/800x500&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto[postname1]"><%= image_tag 'image6.jpg' %></a></li> -->
+                        <li class="item"><a href="http://placehold.it/800x500&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto[postname1]"><%= image_tag 'gallery1.jpg' %></a></li> 
                   </ul>
                 </div>
             </li>
@@ -327,7 +330,7 @@
               <div class="flexslider galleryflex" data-autoplay="yes" data-pagination="yes" data-arrows="no" data-style="fade" data-speed="4000" data-pause="yes">
                     <ul class="slides">
                         <li class="item"><a href="http://placehold.it/600x600&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto[postname2]"><%= image_tag 'gallery 2.jpg' %></a></li>
-                      <!--  <li class="item"><a href="http://placehold.it/400x400&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto[postname2]"><%= image_tag 'image5.jpg' %></a></li> -->
+                        <li class="item"><a href="http://placehold.it/400x400&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto[postname2]"><%= image_tag 'gallery 2.jpg' %></a></li> 
                   </ul>
                 </div>
             </li>
