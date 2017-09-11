@@ -1,30 +1,29 @@
-  
-    <!-- Start Hero Slider -->
-    <div class="hero-slider heroflex flexslider clearfix" data-autoplay="yes" data-pagination="no" data-arrows="yes" data-style="fade" data-speed="7000" data-pause="yes">
-        <ul class="slides">
-        <li class="parallax main_four" style="padding-top: 0.5px; height: 900px;">
-     
-     <%= image_tag "image2.jpg", width: "100%", alt: 'image2' %>
-      <!--  <div class="flex-caption white" data-appear-animation="fadeInRight" data-appear-animation-delay="500" 
+<!-- Start Hero Slider -->
+    <div class="hero-slider heroflex flexslider clearfix" data-autoplay="yes" data-pagination="yes" data-arrows="yes" data-style="fade" data-speed="7000" data-pause="yes">
+     <ul class="slides">
+           <li class="parallax main_four">
+             
+           <%= image_tag 'image3.jpg' %>
+       <div class="flex-caption white" data-appear-animation="fadeInRight" data-appear-animation-delay="500" 
            <h2>To know Christ
            <small>The  Family Life Center in Grand Prairie, Texas</small></h2>
-        </div> -->
+        </div> 
     </li>
     <li class="parallax main_one">
-      <%= image_tag "agapehouse2.jpg", width: "100%", alt: 'agapehouse2' %>
+      <%= image_tag('image4.jpg', class: 'background-image', alt: 'background') %>
         <div class="flex-caption white" data-appear-animation="fadeInRight" data-appear-animation-delay="500">
 
             <strong>To grow in Christ</strong>
         </div>
     </li>
     <li class="parallax main_three">
-      <%= image_tag "image3.jpg", width: "100%", alt: 'image3' %>
+    <%= image_tag 'image3.jpg' %>
         <div class="flex-caption white" data-appear-animation="fadeInRight" data-appear-animation-delay="500">
             <strong>To lead people to Christ</strong>
         </div>
     </li>
     <li class="parallax main_five">
-     <%= image_tag "image4.jpg", width: "100%", height: "100%", alt: 'image4' %>
+      <%= image_tag 'agapehouse2.jpg' %>
         <div class="flex-caption white" data-appear-animation="fadeInRight" data-appear-animation-delay="500">
 
             <strong>To help people grow in Christ</strong>
@@ -44,8 +43,9 @@
                 </div>
             </li>
         </ul> -->
-        <canvas id="canvas-animation"></canvas>
-    </div>
+        <canvas id="canvas-animation" width="1440" height="683"></canvas>
+
+</div>
     <!-- End Hero Slider -->
     <div class="upcoming-event-bar event-dynamic">
         <div class="container">
@@ -53,10 +53,10 @@
               <div class="col-md-5 col-sm-5">
                   <span class="label label-primary">Upcoming Event</span>
                   <h3><a href="single-event.html" class="event-title">Sunday Service Celebration</a></h3>
-                    <span class="meta-data">On <span class="event-date">27 Aug, 17</span> at <span class="event-time">10:00 AM</span> at</span><span class="meta-data event-location"> <span class="event-location-address">Indian Hill Elementary School, 6400 Mission Rd Prairie Village, KS 66204</span></span>
+                    <span class="meta-data">On <span class="event-date">03 Sep, 17</span> at <span class="event-time">10:00 AM</span> at</span><span class="meta-data event-location"> <span class="event-location-address">Indian Hill Middle School, 6400 Mission Rd Prairie Village, KS 66204</span></span>
                 </div>
                 <div class="col-md-5 col-sm-7">
-                    <div id="counter" class="counter clearfix" data-date="August 27, 2017">
+                    <div id="counter" class="counter clearfix" data-date="September 03, 2017">
                         <div class="timer-col"> <span id="days"></span> <span class="timer-type">Days</span> </div>
                         <div class="timer-col"> <span id="hours"></span> <span class="timer-type">Hours</span> </div>
                         <div class="timer-col"> <span id="minutes"></span> <span class="timer-type">Minutes</span> </div>
@@ -65,8 +65,8 @@
                 </div>
                 <div class="col-md-2 text-align-right">
                     <ul class="action-buttons">
-                        <li title="Share event"><a href="#" data-trigger="focus" data-placement="top" data-content="" data-toggle="popover" data-original-title="Share Event" class="event-share-link"><i class="icon-share"></i></a></li>
-                        <li title="Get directions" class="hidden-xs"><a href="#" class="cover-overlay-trigger event-direction-link"><i class="icon-compass"></i></a></li>
+                        <li title="Share event"><a href="#" data-trigger="focus" data-placement="top" data-content="" data-toggle="popover" data-original-title="Share Event" class="event-share-link">
+                     <!--   <li title="Get directions" class="hidden-xs"><a href="#" class="cover-overlay-trigger event-direction-link"><i class="icon-compass"></i></a></li>
                         <!--<li title="Contact event manager"><a href="#" data-toggle="modal" data-target="#Econtact" class="event-contact-link"><i class="icon-mail"></i></a></li> -->
                     </ul>
                    <!-- <a href="#" class="btn btn-primary btn-sm event-tickets event-register-button">Register</a> -->
@@ -142,7 +142,7 @@
                                 <h3 class="element-title">Upcoming Services</h3>
                                 <hr class="sm">
                             </div>
-                            <div class="events-listing-content">
+                          <!--  <div class="events-listing-content">
                                 <div class="event-list-item event-dynamic">
                                   <div class="event-list-item-date">
                                       <span class="event-date">
@@ -163,13 +163,13 @@
                                     </div>
                                     <div class="event-list-item-actions">
                                      <!-- <a href="#" class="btn btn-default btn-transparent event-tickets event-register-button">Register</a> -->
-                                      <ul class="action-buttons">
+                               <!--       <ul class="action-buttons">
                                           <li title="Share event"><a href="#" data-trigger="focus" data-placement="top" data-content="" data-toggle="popover" data-original-title="Share Event" class="event-share-link"><i class="icon-share"></i></a></li>
                                           <li title="Get directions" class="hidden-xs"><a href="#" class="cover-overlay-trigger event-direction-link"><i class="icon-compass"></i></a></li>
                                          <!-- <li title="Contact event manager"><a href="#" data-toggle="modal" data-target="#Econtact" class="event-contact-link"><i class="icon-mail"></i></a></li> -->
-                                        </ul>
-                                    </div>
-                                </div>
+                                      <!--  </ul> -->
+                                    <!-- </div> -->
+                               <!-- </div> -->
                                 <div class="event-list-item event-dynamic">
                                   <div class="event-list-item-date">
                                       <span class="event-date">
@@ -310,7 +310,7 @@
     </div> -->
     <!-- End Body Content --> 
     <!-- Gallery updates -->
-    <div class="gallery-updates cols5 clearfix">
+ <!--   <div class="gallery-updates cols5 clearfix">
       <ul>
         <li class="format-image"><a href="http://placehold.it/600x600&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto" class="media-box">
           <%= image_tag 'gallery1.jpg' %></a></li>
@@ -335,17 +335,17 @@
                 </div>
             </li>
           <li class="format-video"><a href="#"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F100017105711758%2Fvideos%2F107045269875663%2F&show_text=0&width=560" width="560" height="317" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe></a></li> -->
-        </ul>
+       <!-- </ul> -->
             
             <!-- <li class="format-video"><a href="http://vimeo.com/37540860" data-rel="prettyPhoto" class="media-box"><img src="http://placehold.it/600x600&amp;text=IMAGE+PLACEHOLDER" alt=""></a></li> -->
      <!-- please place back the <ul> tag on line 333 here -->
-        <div class="gallery-updates-overlay">
+    <!--    <div class="gallery-updates-overlay">
           <div class="container">
               <i class="icon-multiple-image"></i>
               <h1>GALLERY UPDATES</h1>
             </div>
         </div> 
-    </div> 
+    </div>  
     
 
 <!-- Event Directions Popup -->

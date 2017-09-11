@@ -1,4 +1,8 @@
 class ContactController < ApplicationController
-	def contact
+	def index
 	end
+
+def thank_you
 end
+end
+

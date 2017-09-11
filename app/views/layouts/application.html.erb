@@ -4,16 +4,17 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
-<%= render 'shared/head' %>
 
-<body class="home home-style2 header-style2">
+
+<body class="home home-style2 header-style2"> 
 <!--[if lt IE 7]>
   <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
 <![endif]-->
-<div class="body">
-  <%= render 'shared/header' %>
+<!--<div class="body"> -->
+
+    <%= render 'shared/header' %>
   <%= render 'shared/about' %>
-  .
+  <%= render 'shared/head' %>
  
   <% if @home_page.present? %>
     <div class="main" role="main">
@@ -28,7 +29,7 @@
     <%= yield %>
   <% end %>
   <%= render 'shared/footer' %>
-    <a id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <a id="back-to-top"><i class="fa fa-angle-double-up"></i></a> 
 </div>
 <%= render 'shared/events' %>
 
@@ -42,6 +43,9 @@
 <script src="/vendor/countdown/js/jquery.countdown.min.js"></script> <!-- Jquery Timer -->
 <script src="/vendor/mediaelement/mediaelement-and-player.min.js"></script> <!-- MediaElements -->
 <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+
+
 
 </body>
 </html>
