@@ -6,9 +6,6 @@ Last change:	05/10/14
 Author:	imithemes 
 -------------------------------------------------------------------*/
 /* Stylesheets and Google fonts import */
-@import url("/assets/font-awesome.css.scss");
-@import url("/assets/line-icons.css.scss");
-@import url("animations.css.scss");
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
 @import url(http://fonts.googleapis.com/css?family=Volkhov:400,400italic);
 @import url(http://fonts.googleapis.com/css?family=Clicker+Script);
@@ -1084,7 +1081,7 @@ html[xmlns] .slides {
 	position:relative;
 	left:60%;
 	top:80%;
-	display:none;
+	display:nones;
 }
 .flex-caption strong{
 	/* color:#fff; */
@@ -1930,7 +1927,7 @@ body.boxed .body{
 	
 }
 .smaller-cont .event-list-item-date .event-day{
-	padding-top:14px;
+	padding-top:29px;
 	font-size:35px;
 }
 .event-list-item-date .event-month{
@@ -3202,23 +3199,22 @@ ul.blog-classic-listing strong.post-title{
 	background:rgba(0,0,0,.7);
 	color:#ffffff;
 }
-.main_one{
-	background-image: url('../images/image2.jpg');
+.main_one {
+	background-image:url('../images/image2.jpg');
 }
 
 .main_two {
-	background-image: url('../images/agapehouse2.jpg');
+	background-image:url('../images/agapehouse2.jpg');
 }
 
-.main_three{
-	background-image: url('../images/image3.jpg');
-
-
+.main_three {
+	background-image:url('../images/image3.jpg');
 }
 
-.main_five{
-	background-image: url('../images/image4.jpg');
+.main_four {
+	background-image:url('../images/image1.jpg');
 }
+
 /* ==================================================
    6.4. Counter Shortcode
 ================================================== */
@@ -3824,5 +3820,4 @@ div.field, div.actions {
   left: -200px;
   top: -200px;
 	visibility: hidden;
-
 }
