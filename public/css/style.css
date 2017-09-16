@@ -542,7 +542,7 @@ label {
 	display:inline-block;
 }
 .next-prev-nav a{
-	display:inline-block;
+	display:inline-block; 
 	width:20px;
 	height:20px;
 	color:#fff;
@@ -3771,6 +3771,7 @@ ul.blog-classic-listing strong.post-title{
 		bottom:0;
 	}
 }
+
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	.gallery-updates.cols5 > ul > li, .gallery-updates.cols4 > ul > li, .gallery-updates.cols3 > ul > li, .gallery-updates.cols2 > ul > li{
 		width:50%;

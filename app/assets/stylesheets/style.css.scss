@@ -6,6 +6,7 @@ Last change:	05/10/14
 Author:	imithemes 
 -------------------------------------------------------------------*/
 /* Stylesheets and Google fonts import */
+
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
 @import url(http://fonts.googleapis.com/css?family=Volkhov:400,400italic);
 @import url(http://fonts.googleapis.com/css?family=Clicker+Script);
@@ -540,7 +541,7 @@ label {
 	display:inline-block;
 }
 .next-prev-nav a{
-	display:inline-block;
+	 display:inline-block; 
 	width:20px;
 	height:20px;
 	color:#fff;
@@ -1004,13 +1005,13 @@ html[xmlns] .slides {
 }
 .flexslider .flex-prev{
 	left:auto;
-	right:30px;
+	right:10px;
 }
 .flexslider .flex-prev:before{
-  content: "\f104";
+  content: "<";
 }
 .flexslider .flex-next:before{
-  content: "\f105";
+  content: ">";
 } 
 .hero-slider.flexslider{
 	position:relative;
@@ -3785,6 +3786,8 @@ ul.blog-classic-listing strong.post-title{
 		bottom:0;
 	}
 }
+
+
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	.gallery-updates.cols5 > ul > li, .gallery-updates.cols4 > ul > li, .gallery-updates.cols3 > ul > li, .gallery-updates.cols2 > ul > li{
 		width:50%;
