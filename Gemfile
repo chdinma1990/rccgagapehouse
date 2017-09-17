@@ -27,14 +27,14 @@ gem 'jbuilder', '~> 2.5'
  gem 'google-api-client', '~> 0.13.1', require: 'google/apis/calendar_v3'
  # Use postgresql as the database for Active Record
 gem 'pg'
-gem 'activeadmin'
+#gem 'activeadmin'
 # gem "meta_search", '>= 1.1.0.pre'
 
  #gem "font-awesome-sass"
 
 gem 'stripe', '~> 1.41.0'
-
-gem 'devise', '4.1.0'
+#gem 'activeadmin', github: 'activeadmin'
+#gem 'devise', '4.1.0'
 gem 'dotenv-rails', groups: [:development, :test]
 
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -55,6 +55,7 @@ group :development do
   gem 'web-console', '>= 3.3.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+     gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -62,5 +63,9 @@ end
 # Use Jquery as the Javascript library
 # Use Jquery as the Javascript library
 gem 'jquery-rails'
+gem 'listen', '>= 3.0.5', '< 3.2'
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+    gem 'capybara', '~> 2.13'
+  gem 'selenium-webdriver'
 
 
