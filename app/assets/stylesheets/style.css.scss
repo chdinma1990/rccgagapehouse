@@ -1008,10 +1008,10 @@ html[xmlns] .slides {
 	right:10px;
 }
 .flexslider .flex-prev:before{
-  content: "<";
+  content: "\f104";
 }
 .flexslider .flex-next:before{
-  content: ">";
+  content: "\f105";
 } 
 .hero-slider.flexslider{
 	position:relative;
@@ -1078,14 +1078,14 @@ html[xmlns] .slides {
 	color:#fff;
 	font-weight:400;
 	padding-top:30px;
-	/* padding-bottom: 30px; */
+	 padding-bottom: 30px; 
 	position:relative;
 	left:60%;
 	top:80%;
-	display:nones;
+	display:none;
 }
 .flex-caption strong{
-	/* color:#fff; */
+ color:#fff;
 	font-weight:400;
 	font-size:50px;
 	margin-bottom:30px;
@@ -1904,8 +1904,8 @@ body.boxed .body{
 	border: 2px solid #f8f8f8;
 	background-image:url("../images/dashed.png");
 	text-align:center;
-	height:100px;
-	width:95px;
+	height:100%;
+	width:95%;
 	display:block;
 	margin-top:3px;
 	-webkit-transition:all 0.3s ease 0.2s;
@@ -1916,28 +1916,30 @@ body.boxed .body{
 	
 }
 .smaller-cont .event-list-item-date .event-date{
-	width:70px;
-	height:75px;
+	width:70%;
+	height:75%;
 }
 .event-list-item-date .event-day{
 	font-size:40px;
 	color:#222;
 	font-weight:700;
 	display:block;
-	padding-top:29px;
+	padding-top:10px;
 	
 }
 .smaller-cont .event-list-item-date .event-day{
-	padding-top:29px;
+	padding-top:10px;
 	font-size:35px;
 }
 .event-list-item-date .event-month{
 	padding-top:5px;
+	padding-bottom: 10px;
 	display:block;
 
 }
 .smaller-cont .event-list-item-date .event-month{
 	font-size:12px;
+
 }
 .events-listing-content .event-title:hover{
 	color:#222;
@@ -2019,7 +2021,7 @@ body.boxed .body{
 }
 .lined-info{
 	border-bottom:1px solid #f8f8f8;
-	padding:5px 0;
+	padding:5px 5px;
 }
 .smaller-cont .lined-info{
 	border-bottom:0;
