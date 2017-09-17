@@ -2384,7 +2384,7 @@ ul.blog-classic-listing strong.post-title{
 }
 .page-header:before, .page-header:after{
   display: table;
-  content: " ";
+   content: " ";
 }
 .page-header:after{
 	clear:both;
@@ -2417,6 +2417,8 @@ ul.blog-classic-listing strong.post-title{
 	vertical-align:middle;
 	width:100%;
 	position:relative;
+
+
 }
 .title-subtitle-holder-inner{
 	position:relative;
@@ -3260,6 +3262,7 @@ ul.blog-classic-listing strong.post-title{
 }
 .touch .parallax, .page-header.parallax{
 	background-attachment:scroll!important;
+	margin-top:0.5px;
 }
 /* ==================================================
    7. Responsive Media Queries

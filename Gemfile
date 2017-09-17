@@ -27,7 +27,7 @@ gem 'jbuilder', '~> 2.5'
  gem 'google-api-client', '~> 0.13.1', require: 'google/apis/calendar_v3'
  # Use postgresql as the database for Active Record
 gem 'pg'
-#gem 'activeadmin'
+gem 'activeadmin'
 # gem "meta_search", '>= 1.1.0.pre'
 
  #gem "font-awesome-sass"

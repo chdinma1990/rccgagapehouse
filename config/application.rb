@@ -11,7 +11,7 @@ module Rccgagapehouse
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
  
-  
+  #config.active_record.raise_in_transactional_callbacks = true
    
  
 
