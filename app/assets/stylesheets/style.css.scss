@@ -1222,7 +1222,7 @@ html[xmlns] .slides {
    6. Site Structure & Appearance
 ================================================== */
 body{
-	background-color:#ffffff;
+	background: url("../images/backg1.jpg");
 	color:#8d8d8d;
 	font-size:14px;
 	font-weight:400;
@@ -2334,8 +2334,10 @@ ul.blog-classic-listing strong.post-title{
 .site-footer{
 	border-top:1px solid #efefef;
 	border-bottom:1px solid #efefef;
-	background:#f8f8f8;
+	/*background:#f8f8f8; */
 	padding:40px 0;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(229,229,229,1)), color-stop(99%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+    background: -moz-linear-gradient(top,  rgba(229,229,229,1) 0%, rgba(255,255,255,1) 99%); /* FF3.6+ */
 }
 .site-footer-bottom{
 	padding:40px 0 0;
@@ -3430,8 +3432,8 @@ ul.blog-classic-listing strong.post-title{
 		margin-bottom:40px;
 	}
 	.quick-info{
-		padding-top:15px;
-		padding-bottom:10px;
+		padding-top:9px;
+		padding-bottom:8px;
 		margin-top:0;
 	}
 	.quick-info .col-sm-6{
