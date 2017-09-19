@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.1'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+#gem 'sqlite3'
 # Use Puma as the app server
 #gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -30,7 +30,7 @@ gem 'pg'
 #gem 'activeadmin', github: 'activeadmin'
 # gem "meta_search", '>= 1.1.0.pre'
 
- gem "font-awesome-sass"
+ #gem "font-awesome-sass"
 
 gem 'stripe', '~> 1.41.0'
 #gem 'activeadmin', github: 'activeadmin'
