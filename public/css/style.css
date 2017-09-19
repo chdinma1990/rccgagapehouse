@@ -6,7 +6,7 @@ Last change:	05/10/14
 Author:	imithemes 
 -------------------------------------------------------------------*/
 /* Stylesheets and Google fonts import */
-/*@import url("/assets/font-awesome.css");*/
+@import url("/assets/font-awesome.css");
 @import url("/assets/line-icons.css");
 @import url("animations.css");
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
