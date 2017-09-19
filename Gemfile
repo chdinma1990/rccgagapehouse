@@ -30,7 +30,7 @@ gem 'pg'
 #gem 'activeadmin', github: 'activeadmin'
 # gem "meta_search", '>= 1.1.0.pre'
 
- #gem "font-awesome-sass"
+ gem "font-awesome-sass"
 
 gem 'stripe', '~> 1.41.0'
 #gem 'activeadmin', github: 'activeadmin'
