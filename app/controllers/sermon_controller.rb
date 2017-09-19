@@ -1,2 +1,0 @@
-class SermonController < ApplicationController
-end

@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'sermons/index'
+
+  get 'gallery/index'
+
   root   'home#index'
 
   get 'about' => 'about#us'
@@ -7,6 +11,9 @@ Rails.application.routes.draw do
   get 'media'  => 'media#Services'
   get 'index' => 'home#index'
   get 'ministries' => 'staff'
+  get 'gallery' => 'gallery'
+  get 'sermons' => 'sermons'
+
 
 
  
@@ -22,6 +29,8 @@ Rails.application.routes.draw do
 
   resources :events, :only => [:index]
 
+
+
   # resource :gives
 
   resources :contact, :only => [:index] do
@@ -29,6 +38,8 @@ Rails.application.routes.draw do
       get :thank_you
     end
   end
+
+ 
   
   
 
