@@ -54,4 +54,4 @@ class GivesController < ApplicationController
     params.require(:give).permit(:first_name,:last_name,:phone_number,:address, :state, :city, :zip, :amount,:tithe,:offering,:mission,:other,:stripeToken)
   end
 end
-end
+
