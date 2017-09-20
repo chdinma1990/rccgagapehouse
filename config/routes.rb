@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   get 'about' => 'about#us'
   get 'staff' => 'staff#staff'
-  get 'contact' => 'contact#contact'
+
   get 'media'  => 'media#Services'
   get 'index' => 'home#index'
   get 'ministries' => 'staff'
@@ -32,13 +32,8 @@ Rails.application.routes.draw do
 
 
 
-  # resource :gives
 
-  resources :contact, :only => [:index] do
-    collection do
-      get :thank_you
-    end
-  end
+  # resource :gives
 
  
   
