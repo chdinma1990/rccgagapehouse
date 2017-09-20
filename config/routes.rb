@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get 'ministries' => 'staff'
   get 'gallery' => 'gallery'
   get 'sermons' => 'sermons'
+  get 'calendar' => 'calendar'
 
 
 
