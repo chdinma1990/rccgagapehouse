@@ -1,5 +1,4 @@
-<%= form_for @contact, url: create_contact_url do |f| %>
-  <%= notice %>
+
     <!-- Start Page Header -->
     <div class="page-header parallax clearfix" style="background-image: url(../images/backg-image2.jpg);">
        <div class="title-subtitle-holder">
@@ -27,46 +26,14 @@
   	  <div class="container">
   	   <div class="row">
   	   	<div class="col-md-4 col-sm-5">
-        	<h2>Our Locations</h2>
+        	<h5>Please call or email us for more inquiries for more information.</h5>
         	<hr class="sm">
-        	<h4 class="short accent-color">Kansas, United States</h4>
-        	<p>Indian Hill Middle School<br>6400 Mission Road,<br> Prairie Village, KS 66208 <br>Telephone: 316-209-1642 <br><a href="mailto:rccg_agapehouse@yahoo.com">rccg_agapehouse@yahoo.com</a></p>
+        	<h4 class="short accent-color">Contact Information:</h4>
+        	<p>Indian Hill Middle School<br>6400 Mission Road,<br> Prairie Village, KS 66208 <br>Telephone: 316-209-1642 <br>Email: <a href="mailto:rccg_agapehouse@yahoo.com">rccg_agapehouse@yahoo.com</a></p>
            
-       	</div>
-         <div class="col-md-8 col-sm-7">
-         		<form method="post" id="contactform" name="contactform" class="contact-form clearfix" action="mail/contact.php">
-         			<div class="row">
-         				<div class="col-md-6">
-                 <div class="form-group">
-						<%= f.text_field :name, placeholder: 'Name' %>
-					</div>
-				</div>
-						</div>
-          <div class="row">
-           <div class="col-md-6">
-           <div class="form-group">
-						<%= f.email_field :email, placeholder: 'Email' %>
-					</div>
-				</div>
-				</div>
-						<div class="row">
-              <div class="col-md-12">
-               <div class="form-group">
-						<%= f.text_area :message, placeholder: 'Message'%>
-					</div>
-				</div>
-			</div>
-						<div class="row">
-             <div class="col-md-12">
-						<%= f.submit 'Send' %>
-						<% end %>
-					</div>
-				</div>
-					</form>
-					  <div class="clearfix"></div>
-             <div id="message"></div>
-					</div>	
+      </div>
+     
 				</div>
 				</div>
 				</div>
-				</div>
+				

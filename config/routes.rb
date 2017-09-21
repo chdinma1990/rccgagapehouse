@@ -1,16 +1,11 @@
 Rails.application.routes.draw do
+root   'home#index'
  get '/contact', to: 'contact#new', as: 'new_contact'
  post '/contact', to: 'contact#create', as: 'create_contact'
   get 'sermons/index'
-
   get 'gallery/index'
-
-  root   'home#index'
-
-  get 'about' => 'about#us'
+ get 'about' => 'about#us'
   get 'staff' => 'staff#staff'
-
-  get 'media'  => 'media#Services'
   get 'index' => 'home#index'
   get 'ministries' => 'staff'
   get 'gallery' => 'gallery'
