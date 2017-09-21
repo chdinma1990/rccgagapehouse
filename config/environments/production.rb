@@ -70,6 +70,13 @@ Rails.application.configure do
   # the I18n.default_locale when a translation cannot be found).
   config.i18n.fallbacks = true
 
+ 
+config.action_mailer.perform_deliveries = true
+config.action_mailer.raise_delivery_errors = false
+
+
+
+
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
 
@@ -89,3 +96,5 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 end
+
+

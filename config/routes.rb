@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+ 
   get 'sermons/index'
 
   get 'gallery/index'
@@ -29,6 +30,7 @@ Rails.application.routes.draw do
   # ActiveAdmin.routes(self)
 
   resources :events, :only => [:index]
+  
 
 
 
