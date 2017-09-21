@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
- 
+ get '/contact', to: 'contact#new', as: 'new_contact'
+ post '/contact', to: 'contact#create', as: 'create_contact'
   get 'sermons/index'
 
   get 'gallery/index'
