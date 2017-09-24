@@ -1008,10 +1008,10 @@ html[xmlns] .slides {
 	right:10px;
 }
 .flexslider .flex-prev:before{
-  content: "\f060";
+  content: "\f053";
 }
 .flexslider .flex-next:before{
-  content: "\f061";
+  content: "\f054";
 } 
 .hero-slider.flexslider{
 	position:relative;
@@ -3275,6 +3275,7 @@ ul.blog-classic-listing strong.post-title{
 @media (min-width: 992px) and (max-width: 1199px) {
 	.event-list-item-date{
 		width:18%;
+		height: 19%
 	}
 	.event-list-item-info{
 		width:61%;
