@@ -1664,7 +1664,7 @@ body.boxed .body{
 }
 #menu-toggle{
 	float:right;
-	font-size:20px;
+	font-size:50px;
 	margin-top:25px;
 	color:#fff;
 }
@@ -2325,7 +2325,7 @@ ul.blog-classic-listing strong.post-title{
 	width: 100%;
 }
 .site-footer-bottom{
-	padding:40px 0 0;
+	padding:10px 10px 10px 10px;
 	color:#999;
 	font-size:12px!important
 }

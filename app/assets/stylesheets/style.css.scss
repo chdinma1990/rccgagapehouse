@@ -1673,7 +1673,7 @@ body.boxed .body{
 }
 #menu-toggle{
 	float:right;
-	font-size:20px;
+	font-size:50px;
 	/* margin-top:25px; */
 	color:#fff;
 }
@@ -2340,9 +2340,12 @@ ul.blog-classic-listing strong.post-title{
     background: -moz-linear-gradient(top,  rgba(229,229,229,1) 0%, rgba(255,255,255,1) 99%); /* FF3.6+ */
 }
 .site-footer-bottom{
-	padding:40px 0 0;
+	padding:70px 10px 10px 10px;
 	color:#999;
 	font-size:12px!important
+
+
+	
 }
 .site-footer-bottom a{
 	color:#999;
@@ -3260,7 +3263,7 @@ ul.blog-classic-listing strong.post-title{
 	-moz-background-size:cover;
 	background-size:cover;
 	background-repeat:no-repeat;
-	background-color:#f8f8f8;
+	
 }
 .touch .parallax, .page-header.parallax{
 	background-attachment:scroll!important;
