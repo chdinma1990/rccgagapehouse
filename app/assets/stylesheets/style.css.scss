@@ -1223,7 +1223,7 @@ html[xmlns] .slides {
 ================================================== */
 body{
 
-	background:#000000;
+	background-image:url(../images/white.jpg);
 	color: #000000;
 	font-size:14px;
 	font-weight:400;
@@ -1247,7 +1247,8 @@ body.boxed .body{
 	box-shadow:0 0 2px rgba(0,0,0,.2);
 }
 @media (min-width: 1200px) {
-	body.boxed .body .site-header, body.boxed .body .topbar{
+	body.boxed .body 
+	.site-header, body.boxed .body .topbar{
 		max-width:100%;
 		width:1120px;
 		left:auto;
@@ -1679,7 +1680,8 @@ body.boxed .body{
 	color:#fff;
 }
 .background--light #menu-toggle, .header-style2 #menu-toggle, .header-style3 #menu-toggle, .header-style4 #menu-toggle, .header-style5 #menu-toggle, .sticky-header.site-header #menu-toggle{
-	color:#222;
+	color: #000000;
+	background-image: url(../images/wood.jpg);
 }
 #canvas-animation{
 	 position:absolute;
