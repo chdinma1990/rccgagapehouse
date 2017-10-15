@@ -34,16 +34,16 @@
     <div class="upcoming-event-bar event-dynamic">
     <div class="container">
         <div class="row">
-            <% unless date_of_next("Wednesday").strftime("%d %b, %Y") == DateTime.parse("26 MAR, 2017").strftime("%d %b, %Y") %>
+            <% unless date_of_next("Sunday").strftime("%d %b, %Y") == DateTime.parse("26 MAR, 2017").strftime("%d %b, %Y") %>
             <div class="col-md-6 col-sm-6">
                <span class="label label-primary" style="font-weight: bold;">Next Event:</span> 
-                <h3><a href="#" class="event-title" style="font-weight: bold;"> Prayer and Bible Study</a></h3>
+                <h3><a href="#" class="event-title" style="font-weight: bold;">Sunday Service</a></h3>
                 <h4 style="margin:0px;">
-                <span class="meta-data" style="font-weight: bold;">On <span class="event-date"><%= date_of_next("Wednesday").strftime("%d %b, %Y") %></span> at <span class="event-time">6:30 PM</span> at</span><span class="meta-data event-location"> <span class="event-location-address">Teleconference</span></span>
+                <span class="meta-data" style="font-weight: bold;">On <span class="event-date"><%= date_of_next("Sunday").strftime("%d %b, %Y") %></span> at <span class="event-time">10:00 AM</span> at</span><span class="meta-data event-location"> <span class="event-location-address">Indian Hill Middle School, 6400 Mission Rd Prairie Village Kansas 66208.</span></span>
                 </h4>
             </div>
             <div class="col-md-4 col-sm-4">
-                <div id="counter" class="counter clearfix" data-date="<%= date_of_next("Friday").strftime("%d %b, %Y") %>">
+                <div id="counter" class="counter clearfix" data-date="<%= date_of_next("Sunday").strftime("%d %b, %Y") %>">
                     <div class="timer-col"> <span id="days"></span> <span class="timer-type">Days</span> </div>
                     <div class="timer-col"> <span id="hours"></span> <span class="timer-type">Hours</span> </div>
                     <div class="timer-col"> <span id="minutes"></span> <span class="timer-type">Minutes</span> </div>
