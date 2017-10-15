@@ -1,9 +1,10 @@
 class HomeController < ApplicationController
 # before_action :youtube_videos
-
-  def index
-  	@home_page = true
+  
+  def  index
+     @home_page = true
   end
+  
 
  
 
