@@ -64,13 +64,13 @@
     </div>
   <!--  <div class="event-list-item-info">
         <div class="lined-info">
-            <h4><a href="#" class="event-title">Walking in Freedom</a></h4>
+            <h4><a href="#" class="event-title"></a></h4>
         </div>
         <div class="lined-info">
-            <span class="meta-data"><i class="fa fa-clock-o"></i> Thursday, <span class="event-time">7:30 PM</span></span>
+            <span class="meta-data"><i class="fa fa-clock-o"></i> <span class="event-time"></span></span>
         </div>
         <div class="lined-info event-location">
-            <span class="meta-data"><i class="fa fa-map-marker"></i> <span class="event-location-address">10813 East 23rd Street Independence MO 64052</span></span>
+            <span class="meta-data"><i class="fa fa-map-marker"></i> <span class="event-location-address"></span></span>
         </div>
     </div>
     <div class="event-list-item-actions">
@@ -114,6 +114,7 @@
           </ul>
       </div>
   </div>
+
 <% elsif day.wday == 7 %>
   <% if day.strftime("%d %b, %Y") == DateTime.parse("25 MAR, 2017").strftime("%d %b, %Y") %>
     <div class="event-list-item event-dynamic">
