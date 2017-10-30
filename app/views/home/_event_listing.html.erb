@@ -55,13 +55,13 @@
     </div>
   </div>
 <% elsif day.wday == 4 %>
-  <div class="event-list-item event-dynamic">
+ <!-- <div class="event-list-item event-dynamic">
     <div class="event-list-item-date">
      <!--   <span class="event-date">
             <span class="event-day"><%= day.strftime("%d") %></span>
             <span class="event-month"><%= day.strftime("%b, %Y") %></span>
         </span> -->
-    </div>
+  <!--  </div> -->
   <!--  <div class="event-list-item-info">
         <div class="lined-info">
             <h4><a href="#" class="event-title"></a></h4>
@@ -127,7 +127,7 @@
               <% if day.strftime("%d %b, %Y") == DateTime.parse("26 MAR, 2017").strftime("%d %b, %Y") %>
                 <h4><a href="#" class="event-title"></a></h4>
               <% else %>
-                <h4><a href="#" class="event-title">Thanksgiving Sunday Service</a></h4>
+                <h4><a href="#" class="event-title"> Sunday Service</a></h4>
               <% end %>
           </div>
          <div class="lined-info">
