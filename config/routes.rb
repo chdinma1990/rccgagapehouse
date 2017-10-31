@@ -12,6 +12,7 @@ root   'home#index'
   get 'gallery' => 'gallery'
   get 'sermons' => 'sermons'
   get 'calendar' => 'calendar'
+ 
 
 
 
