@@ -7,20 +7,20 @@
         </div> 
     </li> -->
     <li class="parallax main_one">
-       <div class="flex-caption white" data-appear-animation="fadeInRight" data-appear-animation-delay="300">
+       <div class="flex-caption white" data-appear-animation="fadeInRight" data-appear-animation-delay="300" height= "1200" style="font-weight: bold;">Welcome to Rccg Agape House&nbsp;Church
        <!-- <strong>To be Holy</strong> -->
         </div>
     </li>
-    <li class="parallax main_two">
+   <li class="parallax main_two">
        <div class="flex-caption white" data-appear-animation="fadeInRight" data-appear-animation-delay="300"> 
         <!--  <strong>To Walk In Love</strong> -->
-        </div>
-    </li>
+       </div>
+    </li> 
     <li class="parallax main_three">
        <div class="flex-caption white" data-appear-animation="fadeInRight" data-appear-animation-delay="300"> 
            <!-- <strong>To lead people to Christ</strong> -->
-        </div>
-    </li>
+       </div> 
+    </li> 
      <!--  <li class="parallax main_four">
       <div class="flex-caption white" data-appear-animation="fadeInRight" data-appear-animation-delay="500"> 
         <strong>To Serve God</strong>
@@ -36,10 +36,10 @@
         <div class="row">
             <% unless date_of_next("Wednesday").strftime("%d %b, %Y") == DateTime.parse("26 MAR, 2017").strftime("%d %b, %Y") %>
             <div class="col-md-6 col-sm-6">
-                <span class="label label-primary">Upcoming Event</span>
-                <h3><a href="#" class="event-title">Bible Study</a></h3>
+               <span class="label label-primary" style="font-weight: bold;">Next Event:</span> 
+                <h3><a href="#" class="event-title" style="font-weight: bold;">Bible Study</a></h3>
                 <h4 style="margin:0px;">
-                <span class="meta-data">On <span class="event-date"><%= date_of_next("wednesday").strftime("%d %b, %Y") %></span> at <span class="event-time">6:30 PM</span> at</span><span class="meta-data event-location"> <span class="event-location-address">Teleconference</span></span>
+                <span class="meta-data" style="font-weight: bold;">On <span class="event-date"><%= date_of_next("wednesday").strftime("%d %b, %Y") %></span> at <span class="event-time">6:30 PM</span> at</span><span class="meta-data event-location"> <span class="event-location-address">Teleconference</span></span>
                 </h4>
             </div>
             <div class="col-md-4 col-sm-4">
@@ -73,32 +73,51 @@
             </div>
         </div>
     </div>
-</div>
+   </div>
 <div class="spacer-20"></div>
     <!-- Start Body Content -->
     <div class="main" role="main">
       <div id="content" class="content full">
           <div class="container">
               <div class="row">
-                    <div class="col-md-5 col-sm-5">
+                 <div class="col-md-4">
                         <div class="widget latest_sermons_widget">
                             <ul>
                                 <li class="most-recent-sermon clearfix">
                                     <h3>Recent Sermons</h3>
                                     <hr class="sm">
                                     <div class="latest-sermon-video fw-video">
-                                   <iframe width="854" height="480" src="https://www.youtube.com/embed/DJLcoX52kLI" frameborder="0" allowfullscreen></iframe>
+                                         <div class="video-container fw-video sermon-tabs" id="youtube-video">
+                                              <iframe width="854" height="480" src="https://www.youtube.com/embed/DJLcoX52kLI" frameborder="0" allowfullscreen></iframe>
+                                         </div>
+                                    <div class="latest-sermon-content">
+                                        <h4><a href="single-sermon.html">Rushing wind</a></h4>
+                                        <div class="meta-data">by <a href="#">Chris Hodges</a></div>
+                                        <p>Nulla consequat massa quis enim, aliquet nec nulla consequat massa quis enim, vulputate eget...</p>
                                     </div>
-                                    <div class="latest-sermon-content" style="width: 100%">
+                                   
+                                </li>
+                            </ul>
+                   </div>
+                 <!--  <div class="col-md-5 col-sm-5">
+                        <div class="widget latest_sermons_widget">
+                            <ul>
+                                <li class="most-recent-sermon clearfix">
+                                    <h3>Recent Sermons</h3>
+                                    <hr class="sm">
+                                    <div class="latest-sermon-video fw-video">
+                                   <iframe width="500" height="480" src="https://www.youtube.com/embed/DJLcoX52kLI" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                   <div class="latest-sermon-content">
                                         <h4><a href="single-sermon.html">PRAYER</a></h4>
                                         <div class="meta-data">by <a href="#">Pastor Mrs OKeowo</a></div>
                                         <p>PASTOR MRS OKEOWO SERMON RCCG AGAPE HOUSE SEPTEMBER 24TH 2017 MIRACLE & HEALING SERVICE</p>
-                                    </div>
+                                    </div> 
                                 
-                                </li>
+                              </li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                       
                 <div class="col-md-7 col-sm-7">
                     <div class="element-block events-listing">
@@ -108,7 +127,6 @@
                             <hr class="sm">
                         </div>
                         <div class="events-listing-content">
-
                             <%= render partial: 'event_listing', :locals => {:day => Date.today} %>
                             <%= render partial: 'event_listing', :locals => {:day => 1.day.from_now} %>
                             <%= render partial: 'event_listing', :locals => {:day => 2.days.from_now} %>
@@ -120,10 +138,14 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
+     
         <div class="spacer-90"></div>
-    </div>
+</div> 
 </div>
+
+
 
  

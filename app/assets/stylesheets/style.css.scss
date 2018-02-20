@@ -1222,8 +1222,9 @@ html[xmlns] .slides {
    6. Site Structure & Appearance
 ================================================== */
 body{
-	background-image: url"('../images/backg1.jpg')";
-	
+
+	background:#000000;
+	color: #000000;
 	font-size:14px;
 	font-weight:400;
 	font-family: 'Roboto', sans-serif;
@@ -3211,7 +3212,7 @@ ul.blog-classic-listing strong.post-title{
 	color:#ffffff;
 }
 .main_one {
-	background-image:url('../images/agapehouse2.jpg');
+	background-image:url('../images/agape1.jpg');
 }
 
 .main_two {
@@ -3219,11 +3220,11 @@ ul.blog-classic-listing strong.post-title{
 }
 
 .main_three {
-	background-image:url('../images/image1.jpg');
+	background-image:url('../images/agapehouse2.jpg');
 }
 
 .main_four {
-	background-image:url('../images/staff-image2.jpg');
+	background-image:url('../images/agapehouse2.jpg');
 }
 
 /* ==================================================
