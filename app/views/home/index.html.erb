@@ -7,9 +7,15 @@
         </div> 
     </li> -->
     <li class="parallax main_one">
+<<<<<<< HEAD
        <div class="flex-caption white" data-appear-animation="fadeInRight" data-appear-animation-delay="300" height= "1200" style="font-weight: bold;">Welcome to Rccg Agape House&nbsp;Church
        <!-- <strong>To be Holy</strong> -->
         </div>
+=======
+       <div class="flex-caption white" data-appear-animation="fadeInRight" data-appear-animation-delay="300" height= "1200" style="font-weight: bold;">Welcome to Rccg Agape House&nbsp;Kansas.</div>
+        <!--  <strong>Welcome to Rccg Agape House&nbsp;Church</strong> -->
+       <!-- </div> -->
+>>>>>>> 64920680b9396c70c806289fc0882dadc4d65bc9
     </li>
    <li class="parallax main_two">
        <div class="flex-caption white" data-appear-animation="fadeInRight" data-appear-animation-delay="300"> 
@@ -34,16 +40,22 @@
     <div class="upcoming-event-bar event-dynamic">
     <div class="container">
         <div class="row">
-            <% unless date_of_next("Wednesday").strftime("%d %b, %Y") == DateTime.parse("26 MAR, 2017").strftime("%d %b, %Y") %>
+            <% unless date_of_next("Sunday").strftime("%d %b, %Y") == DateTime.parse("26 MAR, 2017").strftime("%d %b, %Y") %>
             <div class="col-md-6 col-sm-6">
                <span class="label label-primary" style="font-weight: bold;">Next Event:</span> 
+<<<<<<< HEAD
                 <h3><a href="#" class="event-title" style="font-weight: bold;">Bible Study</a></h3>
                 <h4 style="margin:0px;">
                 <span class="meta-data" style="font-weight: bold;">On <span class="event-date"><%= date_of_next("wednesday").strftime("%d %b, %Y") %></span> at <span class="event-time">6:30 PM</span> at</span><span class="meta-data event-location"> <span class="event-location-address">Teleconference</span></span>
+=======
+                <h3><a href="#" class="event-title" style="font-weight: bold;">Sunday Service</a></h3>
+                <h4 style="margin:0px;">
+                <span class="meta-data" style="font-weight: bold;">On <span class="event-date"><%= date_of_next("Sunday").strftime("%d %b, %Y") %></span> at <span class="event-time">10:00 AM</span> at</span><span class="meta-data event-location"> <span class="event-location-address">Indian Hill Middle School</span> <span>6400 Mission Rd, Prairie Village, KANSAS 66208</span>
+>>>>>>> 64920680b9396c70c806289fc0882dadc4d65bc9
                 </h4>
             </div>
             <div class="col-md-4 col-sm-4">
-                <div id="counter" class="counter clearfix" data-date="<%= date_of_next("Wednesday").strftime("%d %b, %Y") %>">
+                <div id="counter" class="counter clearfix" data-date="<%= date_of_next("Sunday").strftime("%d %b, %Y") %>">
                     <div class="timer-col"> <span id="days"></span> <span class="timer-type">Days</span> </div>
                     <div class="timer-col"> <span id="hours"></span> <span class="timer-type">Hours</span> </div>
                     <div class="timer-col"> <span id="minutes"></span> <span class="timer-type">Minutes</span> </div>
@@ -53,7 +65,7 @@
             <% else %>
             
             <div class="col-md-4 col-sm-4">
-                <div id="counter" class="counter clearfix" data-date="<%= date_of_next("Friday").strftime("%d %b, %Y") %>">
+                <div id="counter" class="counter clearfix" data-date="<%= date_of_next("Sunday").strftime("%d %b, %Y") %>">
                     <div class="timer-col"> <span id="days"></span> <span class="timer-type">Days</span> </div>
                     <div class="timer-col"> <span id="hours"></span> <span class="timer-type">Hours</span> </div>
                     <div class="timer-col"> <span id="minutes"></span> <span class="timer-type">Minutes</span> </div>
@@ -80,6 +92,7 @@
       <div id="content" class="content full">
           <div class="container">
               <div class="row">
+<<<<<<< HEAD
                  <div class="col-md-4">
                         <div class="widget latest_sermons_widget">
                             <ul>
@@ -115,15 +128,35 @@
                                     </div> 
                                 
                               </li>
+=======
+                    <div class="col-md-4">
+                      <div class="widget latest_sermons_widget">
+                          <ul>
+                              <li class="most-recent-sermon clearfix">
+                                    <h3></h3>
+                                    <hr class="sm">
+                                    <div class="latest-sermon-video fw-video">
+                                     <!--   <iframe width="854" height="480" src="https://www.youtube.com/embed/tVHarV-N02A" frameborder="0" allowfullscreen></iframe> -->
+
+                                      <iframe width="1280" height="720" src="https://www.youtube.com/embed/zNUR6w_4EtU" frameborder="0" gesture="media" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="latest-sermon-content">
+                                      <!--  <h4><a href="single-sermon.html">Thank you for worshipping with us!</a></h4> -->
+                                        <h4><a href="single-sermon.html">Testimony & Thanksgiving Service - Nov 5, 2017</a></h4>
+                                        <div class="meta-data"><a href="#"></a></div>
+                                        <p></p>
+                                    </div>
+                                     <li><a class= "basic-link" href="/sermons" target="_blank">Watch Sermons</a></li>
+                                </li>
+>>>>>>> 64920680b9396c70c806289fc0882dadc4d65bc9
                             </ul>
                         </div>
                     </div> -->
                       
                 <div class="col-md-7 col-sm-7">
                     <div class="element-block events-listing">
-                        <div class="events-listing-header">
-                            <a href="#" class="pull-right basic-link">All Services</a>
-                            <h3 class="element-title">Upcoming Services</h3>
+                         <a href="#" class="pull-right basic-link">All Events</a>
+                            <h3 class="element-title">Upcoming Events</h3>
                             <hr class="sm">
                         </div>
                         <div class="events-listing-content">
@@ -135,13 +168,27 @@
                             <%= render partial: 'event_listing', :locals => {:day => 5.days.from_now} %>
                             <%= render partial: 'event_listing', :locals => {:day => 6.days.from_now} %>
                             <%= render partial: 'event_listing', :locals => {:day => 7.days.from_now} %>
+
+
+                         
+                           
                         </div>
                     </div>
+                    
+
                 </div>
+<<<<<<< HEAD
 
             </div>
         </div>
      
+=======
+              </div>
+            </div>
+        </div>
+     
+     
+>>>>>>> 64920680b9396c70c806289fc0882dadc4d65bc9
         <div class="spacer-90"></div>
 </div> 
 </div>
